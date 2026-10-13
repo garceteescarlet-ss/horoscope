@@ -114,6 +114,8 @@ const horoscopeData = {
 	}
 };
 
+const result = document.querySelector(".result");
+
 // Get the HTML elements
 const message = document.querySelector(".message");
 const dateRange = document.querySelector(".date-range");
@@ -166,6 +168,9 @@ function onSubmit(event) {
 
 	zodiacImage.src = imgSrc;
 	zodiacImage.alt = imgAlt;
+
+	// Show the results after submission
+	result.style.display = "block";
 
 	// Reset the form
 	form.reset();
